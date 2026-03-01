@@ -12,18 +12,6 @@ This is a **pair programming** assignment that produces a **Student Grade Calcul
 - Writes the grade, grade points and remarks **back into the same Excel file**
 - Prints a full summary in the console including class average, pass and fail count
 
----
-
-## ⚙️ How It Works
-
-```
-students.xlsx          Program runs          students.xlsx
-──────────────    →    ──────────────    →   ──── ──────────────────────
-ID | Name | CA | Exam  Reads the file        ID | Name | CA | Exam | Total | Grade | Points | Remarks
-                       Calculates Total
-                       Assigns Grade
-                       Writes back
-```
 
 **Step by step flow:**
 
@@ -121,7 +109,7 @@ C:\Users\yourname\Desktop\students.xlsx
 
 ### Input (what you provide)
 
-| ID | Student Name   | CA | Exam |
+| ID | Student Name  | CA | Exam |
 |----|---------------|----|------|
 | 1  | John Doe      | 35 | 52   |
 | 2  | Jane Smith    | 38 | 57   |
@@ -134,21 +122,9 @@ C:\Users\yourname\Desktop\students.xlsx
 
 ### Output (what the program fills in)
 
-| ID | Student Name | CA | Exam | Total | Grade | Grade Points | Remarks   |
-|----|--------------|----|------|-------|-------|--------------|-----------|
-| 1  | John Doe     | 35 | 52   | 87.00 | A     | 4.0          | Excellent |
-| 2  | Jane Smith   | 38 | 57   | 95.00 | A     | 4.0          | Excellent |
+| ID | Student Name | Total| Grade | Grade Points | Remarks   |
+|----|--------------|------|-------|--------------|-----------|
+| 1  | John Doe      87.00 | A     | 4.0          | Excellent |
+| 2  | Jane Smith    95.00 | A     | 4.0          | Excellent |
 
-A **Summary** section is also added at the bottom:
 
-```
-── SUMMARY ──
-Total Students    20
-Class Average     69.45
-Highest Total     98.00
-Lowest Total      30.00
-Passing Students  18
-Failing Students  2
-```
-
----
